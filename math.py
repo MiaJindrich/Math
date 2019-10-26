@@ -1,8 +1,10 @@
 import math
 
+# dostane číslo a vypočítá faktoriál
 n = int(input("Zadej celé kladné číslo: "))
 print("Faktoriál", n, "je", math.factorial(n))
 
+# zjistí, zda je číslo prvočíslo
 if n > 1:
     for i in range (2, n):
         if (n % i) == 0:
@@ -13,6 +15,7 @@ if n > 1:
 else:
     print(n, "není prvočíslo.")
 
+# vypíše Fibonacciho posloupnost do n-tého členu
 x = 1
 y = 1
 z = x + y
